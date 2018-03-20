@@ -1,4 +1,4 @@
-table {
+/* table {
     border-spacing: 0px;
     border-collapse: collapse;
     position: absolute;
@@ -19,4 +19,12 @@ td {
     font-size: 30px;
     display: table;
     margin: 160px auto 0 auto;
-}
+} */
+
+canvas.dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
