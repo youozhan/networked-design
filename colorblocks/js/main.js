@@ -30,7 +30,7 @@ if( dotWidth > dotHeight ) {
 
 var dotRadius = dotDiameter * 0.5;
 
-//loop
+// Loop
 for(var i = 0; i < numRows; i++) { // i is the row iterator
   for(var j = 0; j < numCols; j++) { // j is the column iterator
   var x = (j * (dotDiameter + xMargin)) + dotMargin + (xMargin / 2) + dotRadius;
@@ -47,6 +47,7 @@ function drawDot(x, y, radius, color) {
   context.fill();
 }
 
+// Define press event
 var block = {
     start: function(event){
         // this is called on force start
