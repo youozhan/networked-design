@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data is Awesome</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<input id="somedata">
+	<button id="sendit">SEND</button>
+	<div id="result"></div>
+
+
+	<script>
+		function sendData(value){
+
+			// send data using ajax
+
+			// let
+			// var value = 90.1;
+			var url = "https://io.adafruit.com/api/groups/awesome/send.json?x-aio-key=a33376607ad245188762757e903cedd4&inception=" + value;
+
+			$.ajax({
+				method: "GET",
+				url: url,
+				success: function(msg){
+					console.log("Get your data ...");
+					console.log(msg);
+					$("#result").text(msg.feeds[0].last_value);
+				},
+				error: function(error){
+					console.log("An error occurred");
+				}
+			});
+		}
+
+		$("#sendit").click(
+			function(){
+				var val = $("#somedata").val();
+				sendData(val);
+			}
+		);
+
+		// sendData();
+	</script>
+</body>
+</html>

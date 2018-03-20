@@ -1,0 +1,22 @@
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -380px;
+}
+
+td {
+    width: 240px;
+    height: 240px;
+    border: 8px solid white;
+    background-color: #3685B5;
+}
+
+#logBox {
+    font-family: Helvetica;
+    font-size: 30px;
+    display: table;
+    margin: 160px auto 0 auto;
+}
