@@ -15,7 +15,7 @@ function initDots(num) {
     //Initialze color
     setTimeout(function() {
         $('.dots').each(function() {
-            $(this).css("background-color", '#' + 'ffffff');
+            $(this).css("background-color", '#' + '000000');
         })
     }, 500)
 }
@@ -42,8 +42,8 @@ function initPressureJS() {
         },
         change: function(force, event){
             db.ref(event.currentTarget.id + "_color").set(tinycolor.fromRatio({ 
-                r: force*force, 
-                g: force*force*force, 
+                r: force, 
+                g: force, 
                 b: force
             }).toHex());
         },
