@@ -61,15 +61,12 @@ var block = {
             clickedCell.style.backgroundColor = '#ffffff';
         }, 500);
 
-        // $('#logBox').html('No button pressed');
         console.log('No button pressed');
     },
     change: function(force, event){
-        // $('#logBox').html(force);
         console.log(force);
     },
     unsupported: function(){
-        // $('#logBox').html('3D touch not supported on this browser');
         console.log('3D touch not supported on this browser');
     },
     startDeepPress: function(event){
@@ -86,4 +83,4 @@ $.pressureConfig({
     polyfill: false
 });
 
-$('canvas.dots').pressure(block);
+// $('canvas.dots').pressure(block);
