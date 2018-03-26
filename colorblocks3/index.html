@@ -1,21 +1,20 @@
 <html>
-    <head>  
-       <title>color blocks</title>
-       <link rel="stylesheet" type="text/css" href="css\style.css">     
-    </head>
-    <body>
-        <div class="wrapper">
-        </div>
-    </body>
+
+<head>
+    <title>color blocks</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
-    <script src="js\jquery.pressure.min.js"></script>
-    <script src="js\main.js"></script>
+    <script src="js/jquery.pressure.min.js"></script>
 
     <script>
-        
         // Initialize Firebase
         var config = {
             apiKey: "AIzaSyCV14_3aVA3DGSU0PQvYNz0PYF-VV5kS4U",
@@ -27,12 +26,15 @@
         };
 
         firebase.initializeApp(config);
-
         // Get a reference to the database service
         db = firebase.database();
+    </script>
+    <script src="js/main.js"></script>
 
+    <script>
         initDots(24);
         initPressureJS();
-
     </script>
+</body>
+
 </html>
