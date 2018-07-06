@@ -1,16 +1,16 @@
 body {
-    margin: 5rem;
+    margin: 3rem;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 2rem;
+    justify-items: center; 
     background-color:#fff;
 }
 
 .dots {
-    margin: 1rem 0 0 0;
     width: 10rem;
     height: 10rem;
     border: solid 1px #888;
